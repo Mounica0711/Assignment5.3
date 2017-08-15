@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment5.3</title>
+        <!--style starts from here-->
+        
+        <style>
+            body{
+                color:red;
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:brown;">Form to fill details</h1>
+        <p style="color:green;">
+            <strong>Student Details</strong></p>
+        <!--script starts from here-->
+        <script type="text/javascript" language="javascript">
+           var mouni={
+               firstname:"mounika",
+               lastname:"vayalapalli",
+               dob:"11-06-1994",
+               phno:"9441333722",
+               skills:"html,css,js",
+               address:{
+                   city:"vizag",
+                   state:"ap",
+                   country:"india",
+                   pincode:"00000"
+               }
+           } 
+           document.write(" name : " + mouni.firstname + "</br>" + "</br>" );
+            document.write(" last name : " + mouni.lastname + "</br>" + "</br>" );
+            document.write(" dob : " + mouni.dob + "</br>" + "</br>" );
+            document.write(" phonenumber : " + mouni.phno + "</br>" + "</br>" );
+            document.write(" skills : " + mouni.skills + "</br>" + "</br>" );
+            document.write(" city : " + mouni.address.city + "</br>" + "</br>" );
+            document.write(" state : " + mouni.address.state + "</br>" + "</br>" );
+            document.write(" country : " + mouni.address.country + "</br>" + "</br>" );
+            document.write(" pincode : " + mouni.address. pincode + "</br>" + "</br>" );
+            /* deletion */
+            delete mouni.phno;
+            document.write("mouni.phno:" + mouni.phno + "</br>" + "</br>");
+            /*adding field */
+            mouni.mothername="nirma";
+            document.write("mother name : " + mouni.mothername + "</br>" + "</br>" );
+        </script>
+    </body>
+</html>
